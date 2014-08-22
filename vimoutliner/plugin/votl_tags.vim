@@ -21,19 +21,19 @@ endif
 
 " Mappings {{{1
 
-" Follow inter-outline link.
-noremap <buffer> <Plug>VO_FollowLink :call <SID>follow_link()<CR>
-if !hasmapto('<Plug>VO_FollowLink')
-	"map <unique> <buffer> <C-K> <Plug>VO_FollowLink
-	map <silent> <buffer> <C-K> <Plug>VO_FollowLink
-endif
+" " Follow inter-outline link.
+" noremap <buffer> <Plug>VO_FollowLink :call <SID>follow_link()<CR>
+" if !hasmapto('<Plug>VO_FollowLink')
+" 	"map <unique> <buffer> <C-K> <Plug>VO_FollowLink
+" 	map <silent> <buffer> <C-K> <Plug>VO_FollowLink
+" endif
 
-" Go back to previous outline.
-noremap <buffer> <Plug>VO_JumpBack :call <SID>jump_back()<CR>
-if !hasmapto('<Plug>VO_JumpBack')
-	"map <unique> <buffer> <C-N> <Plug>VO_JumpBack
-	map <silent> <buffer> <C-N> <Plug>VO_JumpBack
-endif
+" " Go back to previous outline.
+" noremap <buffer> <Plug>VO_JumpBack :call <SID>jump_back()<CR>
+" if !hasmapto('<Plug>VO_JumpBack')
+" 	"map <unique> <buffer> <C-N> <Plug>VO_JumpBack
+" 	map <silent> <buffer> <C-N> <Plug>VO_JumpBack
+" endif
 
 " Create a link from a word in normal mode.
 noremap <buffer> <Plug>VO_CreateLink :call <SID>create_link()<CR>
